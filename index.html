@@ -376,9 +376,9 @@
                 </div>
                 <div class="subscribe">
                     <form name="subscribe" class="footer-form">
-                        <label type="email" name="email" class="label-footer">Подпишитесь на рассылку</label>
+                        <label for="input-mail-footer" class="label-footer">Подпишитесь на рассылку</label>
                         <div class="footer-mail-section">
-                            <input type="email" name="email" placeholder="E-mail" class="input-mail-footer">
+                            <input type="email" name="email" placeholder="E-mail" class="input-mail-footer" id="input-mail-footer">
                             <button class="subscribe-button" type="submit">
                                 Подписаться
                                 <svg width="24px" height="24px">
@@ -402,7 +402,7 @@
                 <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form>
                     <label  class="label-text" for="username">Имя</label>
-                    <div class="modal-block" width="18px" height="18px">
+                    <div class="modal-block">
                         <input class="form-input" type="text" name="username" id="username">
                         <svg class="svg-modal" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
@@ -410,7 +410,7 @@
                     </div>
                     <label class="label-text" for="user-tel">Телефон</label>
                     <div class="modal-block">
-                        <input name class="form-input" type="tel" name="user-tel" id="user-tel">
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel">
                         <svg class="svg-modal" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                         </svg>
