@@ -25,14 +25,13 @@
     border-radius: 0px 0px 4px 4px;
 
     background-color: $background-color;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .our-team__image {
     display: block;
-}
-
-.our-team__teammate:not(:last-child) {
-    margin-right: 30px;
 }
 
 .our-team__teammate-box {
@@ -80,6 +79,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: background-color;
+    &:focus,
+    &:hover {
+        background-color: $button-bg-color;
+    }
 }
 
 .our-team__social-icon {
@@ -87,14 +90,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill;
-}
-
-.our-team__social-link:focus,
-.our-team__social-link:hover {
-    background-color: $button-bg-color;
-}
-
-.our-team__social-link:focus .our-team__social-icon,
-.our-team__social-link:hover .our-team__social-icon {
-    fill: $button-text-alternative-color;
+    .our-team__social-link:focus &,
+    .our-team__social-link:hover & {fill: $button-text-alternative-color;}
 }

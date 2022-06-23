@@ -45,10 +45,9 @@
 
 .adress-footer__list {
     list-style: none;
-}
-
-.adress-footer__list :first-child {
-    margin-bottom: 9px;
+    &:last-child {
+        margin-bottom: 9px;
+    }
 }
 
 .adress-footer__link {
@@ -61,9 +60,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    &:hover,
+    &:focus {
+            color: $accent-text-color;
+        }
 }
 
-.adress-footer__link:hover,
-.adress-footer__link:focus {
-    color: $accent-text-color;
-}

@@ -4,9 +4,10 @@
     list-style: none;
     margin-left: 93px;
 }
-
-.header-nav__navigation-item:not(:last-child) {
-    margin-right: 50px;
+.header-nav__navigation-item {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .header-nav__navigation_link {
@@ -25,25 +26,24 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
+    &:hover,
+    &:focus {
+            color: $accent-text-color;
+        }
 }
 
 .header-nav__navigation_link--current {
     color: $accent-text-color;
     position: relative;
-}
-
-.header-nav__navigation_link:hover,
-.header-nav__navigation_link:focus {
-    color: $accent-text-color;
-}
-
-.header-nav__navigation_link--current::after {
-    position: absolute;
-    content: "";
-    border: 2px solid $accent-text-color;
-    border-radius: 2px;
-    width: 100%;
-    bottom: -1px;
-    left: 0;
-    background-color: $accent-text-color;
+    &::after {
+            position: absolute;
+            content: "";
+            border: 2px solid $accent-text-color;
+            border-radius: 2px;
+            width: 100%;
+            bottom: -1px;
+            left: 0;
+            background-color: $accent-text-color;
+        }
+    
 }

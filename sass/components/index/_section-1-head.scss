@@ -46,9 +46,7 @@
     min-height: 50px;
     min-width: 200px;
     letter-spacing: 0.06em;
-}
-
-.head__button:hover {
-    background-color: $primary-botton-hover;
-
+    &:hover {
+        background-color: $primary-botton-hover;
+    }
 }

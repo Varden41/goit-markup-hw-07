@@ -79,17 +79,14 @@ body {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
+.header-nav__navigation_link:hover, .header-nav__navigation_link:focus {
+  color: #2196F3;
+}
 
 .header-nav__navigation_link--current {
   color: #2196F3;
   position: relative;
 }
-
-.header-nav__navigation_link:hover,
-.header-nav__navigation_link:focus {
-  color: #2196F3;
-}
-
 .header-nav__navigation_link--current::after {
   position: absolute;
   content: "";
@@ -126,9 +123,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+.header-contacts__link:hover, .header-contacts__link:focus {
   color: #2196F3;
 }
 
@@ -153,7 +148,6 @@ body {
 
 .head__title {
   margin-bottom: 30px;
-  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -180,7 +174,6 @@ body {
   min-width: 200px;
   letter-spacing: 0.06em;
 }
-
 .head__button:hover {
   background-color: #188CE8;
 }
@@ -212,7 +205,6 @@ body {
 .advantages__item {
   width: 270px;
 }
-
 .advantages__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -312,13 +304,12 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: #FFFFFF;
 }
+.our-team__teammate:not(:last-child) {
+  margin-right: 30px;
+}
 
 .our-team__image {
   display: block;
-}
-
-.our-team__teammate:not(:last-child) {
-  margin-right: 30px;
 }
 
 .our-team__teammate-box {
@@ -365,6 +356,9 @@ body {
   transition-duration: 250ms;
   transition-property: background-color;
 }
+.our-team__social-link:focus, .our-team__social-link:hover {
+  background-color: #2196F3;
+}
 
 .our-team__social-icon {
   fill: #AFB1B8;
@@ -372,14 +366,7 @@ body {
   transition-duration: 250ms;
   transition-property: fill;
 }
-
-.our-team__social-link:focus,
-.our-team__social-link:hover {
-  background-color: #2196F3;
-}
-
-.our-team__social-link:focus .our-team__social-icon,
-.our-team__social-link:hover .our-team__social-icon {
+.our-team__social-link:focus .our-team__social-icon, .our-team__social-link:hover .our-team__social-icon {
   fill: #FFFFFF;
 }
 
@@ -421,6 +408,9 @@ body {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+.clients__link:focus, .clients__link:hover {
+  border-color: #2196F3;
+}
 
 .clients__icon {
   fill: #AFB1B8;
@@ -428,15 +418,8 @@ body {
   transition-duration: 250ms;
   transition-property: fill;
 }
-
-.clients__link:focus .clients__icon,
-.clients__link:hover .clients__icon {
+.clients__link:focus .clients__icon, .clients__link:hover .clients__icon {
   fill: #2196F3;
-}
-
-.clients__link:focus,
-.clients__link:hover {
-  border-color: #2196F3;
 }
 
 .backdrop {
@@ -487,9 +470,7 @@ body {
 .modal-window__close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-window__close-icon:hover,
-.modal-window__close-icon:focus {
+.modal-window__close-icon:hover, .modal-window__close-icon:focus {
   fill: #2196F3;
 }
 
@@ -519,6 +500,9 @@ body {
   height: 40px;
   align-items: center;
 }
+.modal-window__input-box:focus-within {
+  fill: #2196F3;
+}
 
 .modal-window__input {
   width: 100%;
@@ -531,9 +515,7 @@ body {
   transition-property: border-color;
   outline: none;
 }
-
-.modal-window__input:focus,
-.modal-window__comments:focus {
+.modal-window__input:focus {
   border-color: #2196F3;
 }
 
@@ -569,9 +551,8 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
 }
-
-.modal-window__input-box:focus-within {
-  fill: #2196F3;
+.modal-window__comments:focus {
+  border-color: #2196F3;
 }
 
 /* Checkbox  */
@@ -605,6 +586,14 @@ body {
   transition-duration: 250ms;
   transition-property: background-color;
 }
+.checkbox__input:checked + .checkbox__icon {
+  background-color: #2196F3;
+  border: none;
+  background-origin: border-box;
+}
+.checkbox__input:focus + .checkbox__icon {
+  border-color: #188CE8;
+}
 
 .checkbox__text {
   font-size: 14px;
@@ -618,16 +607,6 @@ body {
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--button-bg-color);
-}
-
-.checkbox__input:checked + .checkbox__icon {
-  background-color: #2196F3;
-  border: none;
-  background-origin: border-box;
-}
-
-.checkbox__input:focus + .checkbox__icon {
-  border-color: #188CE8;
 }
 
 /* Modal Button */
@@ -651,9 +630,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-
-.modal-window__submit:hover,
-.modal-window__submit:focus {
+.modal-window__submit:hover, .modal-window__submit:focus {
   background-color: #188CE8;
 }
 
@@ -701,8 +678,7 @@ body {
 .adress-footer__list {
   list-style: none;
 }
-
-.adress-footer__list :first-child {
+.adress-footer__list:last-child {
   margin-bottom: 9px;
 }
 
@@ -716,9 +692,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-
-.adress-footer__link:hover,
-.adress-footer__link:focus {
+.adress-footer__link:hover, .adress-footer__link:focus {
   color: #2196F3;
 }
 
@@ -764,18 +738,11 @@ body {
   transition-duration: 250ms;
   transition-property: background-color;
 }
-
-.footer-join__social-link:hover,
-.footer-join__social-link:focus {
+.footer-join__social-link:hover, .footer-join__social-link:focus {
   background-color: #2196F3;
 }
 
 .footer-join__social-icon {
-  fill: #FFFFFF;
-}
-
-.footer-join__social-link:focus .footer-join__socual-icon,
-.footer-join__social-link:hover .footer-join__socual-icon {
   fill: #FFFFFF;
 }
 
@@ -869,9 +836,7 @@ body {
   transition-duration: 250ms;
   transition-property: color, background-color, box-shadow;
 }
-
-.projects__filter-button:hover,
-.projects__filter-button:focus {
+.projects__filter-button:hover, .projects__filter-button:focus {
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -887,11 +852,9 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .projects__item:nth-child(3n) {
   margin-right: 0px;
 }
-
 .projects__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
@@ -905,9 +868,7 @@ body {
   transition-duration: 250ms;
   transition-property: box-shadow;
 }
-
-.projects__link:hover,
-.projects__link:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -939,9 +900,7 @@ body {
   transition-duration: 250ms;
   transition-property: transform;
 }
-
-.projects__link:hover .projects__hover-box-text,
-.projects__link:focus .projects__hover-box-text {
+.projects__link:hover .projects__hover-box-text, .projects__link:focus .projects__hover-box-text {
   opacity: 1;
   transform: translateY(-100%);
 }

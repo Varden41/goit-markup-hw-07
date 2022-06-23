@@ -37,6 +37,10 @@
     transition-property: border-color;
     border: 1px solid $clients-order;
     border-radius: 4px;
+    &:focus,
+    &:hover {
+        border-color: $button-bg-color;
+    }
 }
 
 .clients__icon {
@@ -44,14 +48,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill;
-}
-
-.clients__link:focus .clients__icon,
-.clients__link:hover .clients__icon {
-    fill: $button-bg-color;
-}
-
-.clients__link:focus,
-.clients__link:hover {
-    border-color: $button-bg-color;
+    .clients__link:focus &,
+    .clients__link:hover & {
+            fill: $button-bg-color;
+        }
 }

@@ -40,20 +40,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: background-color;
+    &:hover,
+    &:focus {
+        background-color: $button-bg-color;
+    }
 }
 
-.footer-join__social-link:hover,
-.footer-join__social-link:focus {
-    background-color: $button-bg-color;
-}
 
 
 .footer-join__social-icon {
     fill: $additionat-text-color;
-}
-
-.footer-join__social-link:focus .footer-join__socual-icon,
-.footer-join__social-link:hover .footer-join__socual-icon {
-    fill: $button-text-alternative-color;
-
 }
